@@ -3,10 +3,10 @@ var input = document.getElementById("inputx");
 var btn = document.getElementById("btnx");
 var list = document.getElementById("listx");
 //adding button and input eventlisteners
-btn.addEventListener("click", addItems);
-input.addEventListener("keypress", addItemsx);
+btn.addEventListener("click", addItemv1);
+input.addEventListener("keypress", addItemv2);
 //button listener function
-function addItems() {
+function addItemv1() {
     if (input.value == "") {
         alert("enter something...");
     }
@@ -30,7 +30,7 @@ function addItems() {
     }
 }
 //input listener function
-function addItemsx(event) {
+function addItemv2(event) {
     if (event.keyCode == 13) {
         if (input.value == "") {
             alert("enter something...");
